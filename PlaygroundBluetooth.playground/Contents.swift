@@ -11,6 +11,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let centralManager = PlaygroundBluetoothCentralManager(services: nil, queue: .main)
+        centralManager.delegate = self
+        
         let connectionView = PlaygroundBluetoothConnectionView(centralManager: centralManager)
         connectionView.delegate = self
         connectionView.dataSource = self

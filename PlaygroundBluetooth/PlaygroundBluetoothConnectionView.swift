@@ -11,8 +11,8 @@ import CoreBluetooth
 
 public class PlaygroundBluetoothConnectionView: UIView {
     
-    public var delegate: PlaygroundBluetoothConnectionViewDelegate?
-    public var dataSource: PlaygroundBluetoothConnectionViewDataSource?
+    public weak var delegate: PlaygroundBluetoothConnectionViewDelegate?
+    public weak var dataSource: PlaygroundBluetoothConnectionViewDataSource?
     
     public init(centralManager: PlaygroundBluetoothCentralManager) {
         super.init(frame: CGRect.zero)

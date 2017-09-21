@@ -11,7 +11,7 @@ import CoreBluetooth
 
 public class PlaygroundBluetoothCentralManager {
     
-    public var delegate: PlaygroundBluetoothCentralManagerDelegate?
+    public weak var delegate: PlaygroundBluetoothCentralManagerDelegate?
     public private(set) var state: CBManagerState = .unknown
     
     public init(services: [CBUUID]?, queue: DispatchQueue) {
