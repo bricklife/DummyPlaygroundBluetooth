@@ -1,14 +1,9 @@
-//
-//  ViewController.swift
-//  PlaygroundBluetoothApp
-//
-//  Created by Shinichiro Oba on 2017/09/21.
-//  Copyright © 2017 ooba. All rights reserved.
-//
-
+//: A UIKit based Playground for presenting user interface
+  
 import UIKit
 import CoreBluetooth
 import PlaygroundBluetooth
+import PlaygroundSupport
 
 class ViewController: UIViewController {
     
@@ -47,7 +42,7 @@ extension ViewController: PlaygroundBluetoothCentralManagerDelegate {
 }
 
 extension ViewController: PlaygroundBluetoothConnectionViewDelegate {
-
+    
     func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, shouldDisplayDiscovered peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?, rssi: Double) -> Bool {
         return true
     }
@@ -69,9 +64,12 @@ extension ViewController: PlaygroundBluetoothConnectionViewDelegate {
 }
 
 extension ViewController: PlaygroundBluetoothConnectionViewDataSource {
-
+    
     func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, itemForPeripheral peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item {
         let item = PlaygroundBluetoothConnectionView.Item(name: "", icon: UIImage(), issueIcon: UIImage(), firmwareStatus: nil, batteryLevel: nil)
         return item
     }
 }
+
+// Present the view controller in the Live View window
+PlaygroundPage.current.liveView = ViewController()

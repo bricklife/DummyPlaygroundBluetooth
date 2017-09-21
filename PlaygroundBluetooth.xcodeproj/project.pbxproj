@@ -9,55 +9,17 @@
 /* Begin PBXBuildFile section */
 		CB56555D1F7436D80067EE47 /* PlaygroundBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = CB56555B1F7436D80067EE47 /* PlaygroundBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB5655641F7436F50067EE47 /* PlaygroundBluetoothCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5655631F7436F50067EE47 /* PlaygroundBluetoothCentralManager.swift */; };
-		CBDC3A651F747B7E00E51AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A641F747B7E00E51AF0 /* AppDelegate.swift */; };
-		CBDC3A671F747B7E00E51AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A661F747B7E00E51AF0 /* ViewController.swift */; };
-		CBDC3A6A1F747B7E00E51AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBDC3A681F747B7E00E51AF0 /* Main.storyboard */; };
-		CBDC3A6C1F747B7E00E51AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDC3A6B1F747B7E00E51AF0 /* Assets.xcassets */; };
-		CBDC3A6F1F747B7E00E51AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBDC3A6D1F747B7E00E51AF0 /* LaunchScreen.storyboard */; };
-		CBDC3A741F747EA700E51AF0 /* PlaygroundBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5655581F7436D80067EE47 /* PlaygroundBluetooth.framework */; };
-		CBDC3A751F747EA700E51AF0 /* PlaygroundBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5655581F7436D80067EE47 /* PlaygroundBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBDC3A7A1F747F9E00E51AF0 /* PlaygroundBluetoothCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A791F747F9E00E51AF0 /* PlaygroundBluetoothCentralManagerDelegate.swift */; };
 		CBDC3A7C1F747FD400E51AF0 /* PlaygroundBluetoothConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A7B1F747FD400E51AF0 /* PlaygroundBluetoothConnectionView.swift */; };
 		CBDC3A7E1F747FF700E51AF0 /* PlaygroundBluetoothConnectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A7D1F747FF700E51AF0 /* PlaygroundBluetoothConnectionViewDelegate.swift */; };
 		CBDC3A801F74803200E51AF0 /* PlaygroundBluetoothConnectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC3A7F1F74803200E51AF0 /* PlaygroundBluetoothConnectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CBDC3A761F747EA700E51AF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB56554F1F7436D80067EE47 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB5655571F7436D80067EE47;
-			remoteInfo = PlaygroundBluetooth;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CBDC3A781F747EA800E51AF0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CBDC3A751F747EA700E51AF0 /* PlaygroundBluetooth.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		CB5655581F7436D80067EE47 /* PlaygroundBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaygroundBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB56555B1F7436D80067EE47 /* PlaygroundBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundBluetooth.h; sourceTree = "<group>"; };
 		CB56555C1F7436D80067EE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5655631F7436F50067EE47 /* PlaygroundBluetoothCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundBluetoothCentralManager.swift; sourceTree = "<group>"; };
-		CBDC3A621F747B7E00E51AF0 /* PlaygroundBluetoothApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaygroundBluetoothApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBDC3A641F747B7E00E51AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBDC3A661F747B7E00E51AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBDC3A691F747B7E00E51AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CBDC3A6B1F747B7E00E51AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBDC3A6E1F747B7E00E51AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBDC3A701F747B7E00E51AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBDC3A791F747F9E00E51AF0 /* PlaygroundBluetoothCentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundBluetoothCentralManagerDelegate.swift; sourceTree = "<group>"; };
 		CBDC3A7B1F747FD400E51AF0 /* PlaygroundBluetoothConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundBluetoothConnectionView.swift; sourceTree = "<group>"; };
 		CBDC3A7D1F747FF700E51AF0 /* PlaygroundBluetoothConnectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundBluetoothConnectionViewDelegate.swift; sourceTree = "<group>"; };
@@ -72,14 +34,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBDC3A5F1F747B7E00E51AF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBDC3A741F747EA700E51AF0 /* PlaygroundBluetooth.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				CB56555A1F7436D80067EE47 /* PlaygroundBluetooth */,
-				CBDC3A631F747B7E00E51AF0 /* PlaygroundBluetoothApp */,
 				CB5655591F7436D80067EE47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				CB5655581F7436D80067EE47 /* PlaygroundBluetooth.framework */,
-				CBDC3A621F747B7E00E51AF0 /* PlaygroundBluetoothApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,19 +65,6 @@
 				CBDC3A7D1F747FF700E51AF0 /* PlaygroundBluetoothConnectionViewDelegate.swift */,
 			);
 			path = PlaygroundBluetooth;
-			sourceTree = "<group>";
-		};
-		CBDC3A631F747B7E00E51AF0 /* PlaygroundBluetoothApp */ = {
-			isa = PBXGroup;
-			children = (
-				CBDC3A641F747B7E00E51AF0 /* AppDelegate.swift */,
-				CBDC3A661F747B7E00E51AF0 /* ViewController.swift */,
-				CBDC3A681F747B7E00E51AF0 /* Main.storyboard */,
-				CBDC3A6B1F747B7E00E51AF0 /* Assets.xcassets */,
-				CBDC3A6D1F747B7E00E51AF0 /* LaunchScreen.storyboard */,
-				CBDC3A701F747B7E00E51AF0 /* Info.plist */,
-			);
-			path = PlaygroundBluetoothApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,25 +99,6 @@
 			productReference = CB5655581F7436D80067EE47 /* PlaygroundBluetooth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CBDC3A611F747B7E00E51AF0 /* PlaygroundBluetoothApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CBDC3A731F747B7E00E51AF0 /* Build configuration list for PBXNativeTarget "PlaygroundBluetoothApp" */;
-			buildPhases = (
-				CBDC3A5E1F747B7E00E51AF0 /* Sources */,
-				CBDC3A5F1F747B7E00E51AF0 /* Frameworks */,
-				CBDC3A601F747B7E00E51AF0 /* Resources */,
-				CBDC3A781F747EA800E51AF0 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CBDC3A771F747EA700E51AF0 /* PBXTargetDependency */,
-			);
-			name = PlaygroundBluetoothApp;
-			productName = PlaygroundBluetoothApp;
-			productReference = CBDC3A621F747B7E00E51AF0 /* PlaygroundBluetoothApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,10 +112,6 @@
 					CB5655571F7436D80067EE47 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					CBDC3A611F747B7E00E51AF0 = {
-						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -214,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				CB5655571F7436D80067EE47 /* PlaygroundBluetooth */,
-				CBDC3A611F747B7E00E51AF0 /* PlaygroundBluetoothApp */,
 			);
 		};
 /* End PBXProject section */
@@ -224,16 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CBDC3A601F747B7E00E51AF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBDC3A6F1F747B7E00E51AF0 /* LaunchScreen.storyboard in Resources */,
-				CBDC3A6C1F747B7E00E51AF0 /* Assets.xcassets in Resources */,
-				CBDC3A6A1F747B7E00E51AF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,43 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBDC3A5E1F747B7E00E51AF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CBDC3A671F747B7E00E51AF0 /* ViewController.swift in Sources */,
-				CBDC3A651F747B7E00E51AF0 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CBDC3A771F747EA700E51AF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB5655571F7436D80067EE47 /* PlaygroundBluetooth */;
-			targetProxy = CBDC3A761F747EA700E51AF0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CBDC3A681F747B7E00E51AF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBDC3A691F747B7E00E51AF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CBDC3A6D1F747B7E00E51AF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBDC3A6E1F747B7E00E51AF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB56555E1F7436D80067EE47 /* Debug */ = {
@@ -447,36 +316,6 @@
 			};
 			name = Release;
 		};
-		CBDC3A711F747B7E00E51AF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaygroundBluetoothApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bricklife.ios.PlaygroundBluetoothApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CBDC3A721F747B7E00E51AF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaygroundBluetoothApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bricklife.ios.PlaygroundBluetoothApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,15 +333,6 @@
 			buildConfigurations = (
 				CB5655611F7436D80067EE47 /* Debug */,
 				CB5655621F7436D80067EE47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CBDC3A731F747B7E00E51AF0 /* Build configuration list for PBXNativeTarget "PlaygroundBluetoothApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBDC3A711F747B7E00E51AF0 /* Debug */,
-				CBDC3A721F747B7E00E51AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
