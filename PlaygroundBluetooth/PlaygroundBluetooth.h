@@ -2,7 +2,7 @@
 //  PlaygroundBluetooth.h
 //  PlaygroundBluetooth
 //
-//  Created by ooba on 21/09/2017.
+//  Created by Shinichiro Oba on 21/09/2017.
 //  Copyright © 2017 ooba. All rights reserved.
 //
 
