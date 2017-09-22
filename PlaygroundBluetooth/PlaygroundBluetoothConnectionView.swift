@@ -16,7 +16,14 @@ public class PlaygroundBluetoothConnectionView: UIView {
     
     public init(centralManager: PlaygroundBluetoothCentralManager) {
         super.init(frame: CGRect.zero)
-        backgroundColor = .gray
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            heightAnchor.constraint(equalToConstant: 50),
+            widthAnchor.constraint(equalToConstant: 200),
+        ])
+        
+        backgroundColor = .white
     }
     
     required public init?(coder aDecoder: NSCoder) {

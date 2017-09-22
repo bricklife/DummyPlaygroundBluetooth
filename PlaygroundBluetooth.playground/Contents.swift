@@ -1,5 +1,5 @@
 //: A UIKit based Playground for presenting user interface
-  
+
 import UIKit
 import CoreBluetooth
 import PlaygroundBluetooth
@@ -7,18 +7,22 @@ import PlaygroundSupport
 
 class ViewController: UIViewController {
     
+    private let centralManager = PlaygroundBluetoothCentralManager(services: nil, queue: .main)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let centralManager = PlaygroundBluetoothCentralManager(services: nil, queue: .main)
         centralManager.delegate = self
         
         let connectionView = PlaygroundBluetoothConnectionView(centralManager: centralManager)
         connectionView.delegate = self
         connectionView.dataSource = self
         
-        connectionView.frame = CGRect(x: 20, y: 40, width: 200, height: 50)
         view.addSubview(connectionView)
+        NSLayoutConstraint.activate([
+            connectionView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            connectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
     }
 }
 
@@ -68,7 +72,9 @@ extension ViewController: PlaygroundBluetoothConnectionViewDelegate {
 extension ViewController: PlaygroundBluetoothConnectionViewDataSource {
     
     func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, itemForPeripheral peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?) -> PlaygroundBluetoothConnectionView.Item {
-        let item = PlaygroundBluetoothConnectionView.Item(name: "", icon: UIImage(), issueIcon: UIImage(), firmwareStatus: nil, batteryLevel: nil)
+        let name = peripheral.name ?? "Unknown"
+        let icon = UIImage()
+        let item = PlaygroundBluetoothConnectionView.Item(name: name, icon: icon, issueIcon: icon, firmwareStatus: nil, batteryLevel: nil)
         return item
     }
 }
