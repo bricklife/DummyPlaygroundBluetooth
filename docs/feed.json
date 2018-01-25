@@ -13,9 +13,9 @@
             "description": "description",
             "contentIdentifier": "com.bricklife.PlaygroundBluetooth.battery",
             "contentVersion": "1.0",
-            "url": "battery.playgroundbook.zip",
+            "url": "battery.playground.zip",
             "publishedDate": "2017-11-13T21:13:57+00:00",
-            "lastUpdatedDate": "2017-11-13T21:13:57+00:00",
+            "lastUpdatedDate": "2018-01-13T21:13:57+00:00",
             "thumbnailURL": "thumbnail.png",
             "bannerImageURL": "banner.png",
             "additionalInformation": [
