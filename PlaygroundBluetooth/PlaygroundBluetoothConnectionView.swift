@@ -12,9 +12,10 @@ import CoreBluetooth
 public class PlaygroundBluetoothConnectionView: UIView {
     
     public weak var delegate: PlaygroundBluetoothConnectionViewDelegate?
+    
     public weak var dataSource: PlaygroundBluetoothConnectionViewDataSource?
     
-    public init(centralManager: PlaygroundBluetoothCentralManager) {
+    public init(centralManager: PlaygroundBluetoothCentralManager, delegate: PlaygroundBluetoothConnectionViewDelegate? = nil, dataSource: PlaygroundBluetoothConnectionViewDataSource? = nil) {
         super.init(frame: CGRect.zero)
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -30,29 +31,39 @@ public class PlaygroundBluetoothConnectionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setBatteryLevel(_ batteryLevel: Double?, forPeripheral: CBPeripheral) {
+    public func setItem(_ item: Item, forPeripheral peripheral: CBPeripheral) {
+        
     }
     
-    public func setFirmwareStatus(_ firmwareStatus: Item.FirmwareStatus?, forPeripheral: CBPeripheral) {
+    public func setName(_ name: String, forPeripheral peripheral: CBPeripheral) {
+        
     }
     
-    public enum State {
-        case noConnection
-        case connecting
-        case searchingForPeripherals
-        case selectingPeripherals
-        case connectedPeripheralFirmwareOutOfDate
+    public func setIcon(_ icon: UIImage, forPeripheral peripheral: CBPeripheral) {
+        
+    }
+    
+    public func setIssueIcon(_ issueIcon: UIImage, forPeripheral peripheral: CBPeripheral) {
+        
+    }
+    
+    public func setBatteryLevel(_ batteryLevel: Double?, forPeripheral peripheral: CBPeripheral) {
+        
+    }
+    
+    public func setFirmwareStatus(_ firmwareStatus: Item.FirmwareStatus?, forPeripheral peripheral: CBPeripheral) {
+        
     }
     
     public struct Item {
         
-        public let name: String
-        public let icon: UIImage
-        public let issueIcon: UIImage
-        public let firmwareStatus: FirmwareStatus?
-        public let batteryLevel: Double?
+        public var name: String
+        public var icon: UIImage
+        public var issueIcon: UIImage
+        public var firmwareStatus: FirmwareStatus?
+        public var batteryLevel: Double?
         
-        public init(name: String, icon: UIImage, issueIcon: UIImage, firmwareStatus: FirmwareStatus?, batteryLevel: Double?) {
+        public init(name: String, icon: UIImage, issueIcon: UIImage, firmwareStatus: FirmwareStatus? = nil, batteryLevel: Double? = nil) {
             self.name = name
             self.icon = icon
             self.issueIcon = issueIcon
@@ -64,5 +75,13 @@ public class PlaygroundBluetoothConnectionView: UIView {
             case upToDate
             case outOfDate
         }
+    }
+    
+    public enum State {
+        case noConnection
+        case connecting
+        case searchingForPeripherals
+        case selectingPeripherals
+        case connectedPeripheralFirmwareOutOfDate
     }
 }

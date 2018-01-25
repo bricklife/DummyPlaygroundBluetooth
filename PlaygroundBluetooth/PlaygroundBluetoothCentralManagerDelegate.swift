@@ -13,7 +13,7 @@ public protocol PlaygroundBluetoothCentralManagerDelegate : NSObjectProtocol {
     
     func centralManagerStateDidChange(_ centralManager: PlaygroundBluetoothCentralManager)
     
-    func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, didDiscover peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?, rssi: Double)
+    func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, didDiscover peripheral: CBPeripheral, withAdvertisementData advertisementData: [String: Any]?, rssi: Double)
     
     func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, willConnectTo peripheral: CBPeripheral)
     
