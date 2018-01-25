@@ -1,0 +1,32 @@
+{
+    "title": "PlaygroundBluetooth Framework",
+    "subtitle": "Examples of PlaygroundBluetooth Framework",
+    "publisherName": "Shinichiro Oba",
+    "feedIdentifier": "com.bricklife.PlaygroundBluetooth",
+    "contactURL": "https://twitter.com/ooba",
+    "formatVersion": "1.0",
+    "documents": [
+        {
+            "title": "Battery",
+            "overviewSubtitle": "overviewSubtitle",
+            "detailSubtitle": "detailSubtitle",
+            "description": "description",
+            "contentIdentifier": "com.bricklife.PlaygroundBluetooth.battery",
+            "contentVersion": "1.0",
+            "url": "battery.playgroundbook.zip",
+            "publishedDate": "2017-11-13T21:13:57+00:00",
+            "lastUpdatedDate": "2017-11-13T21:13:57+00:00",
+            "thumbnailURL": "thumbnail.png",
+            "bannerImageURL": "banner.png",
+            "additionalInformation": [
+                {
+                    "name": "Languages",
+                    "value": "English"
+                }
+            ],
+            "previewImageURLs": [
+                "preview.png"
+            ]
+        }
+    ]
+}
