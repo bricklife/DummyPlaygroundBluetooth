@@ -15,7 +15,29 @@
             "contentVersion": "1.0",
             "url": "battery.playground.zip",
             "publishedDate": "2017-11-13T21:13:57+00:00",
-            "lastUpdatedDate": "2018-01-13T21:13:57+00:00",
+            "lastUpdatedDate": "2018-01-20T21:13:57+00:00",
+            "thumbnailURL": "thumbnail.png",
+            "bannerImageURL": "banner.png",
+            "additionalInformation": [
+                {
+                    "name": "Languages",
+                    "value": "English"
+                }
+            ],
+            "previewImageURLs": [
+                "preview.png"
+            ]
+        },
+        {
+            "title": "Battery 2",
+            "overviewSubtitle": "overviewSubtitle",
+            "detailSubtitle": "detailSubtitle",
+            "description": "description",
+            "contentIdentifier": "com.bricklife.PlaygroundBluetooth.battery2",
+            "contentVersion": "1.0",
+            "url": "battery.playground.zip",
+            "publishedDate": "2017-11-13T21:13:57+00:00",
+            "lastUpdatedDate": "2018-01-20T21:13:57+00:00",
             "thumbnailURL": "thumbnail.png",
             "bannerImageURL": "banner.png",
             "additionalInformation": [
